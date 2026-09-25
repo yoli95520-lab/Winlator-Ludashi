@@ -43,7 +43,7 @@ tasks.register("downloadImageFS") {
     }
 }
 
-tasks.register("downloadProton") {
+/*tasks.register("downloadProton") {
     def assetDir = new File(project.rootDir, ["app","src","main","assets"].join(File.separator))
     File protonARM64EC = new File(assetDir, "proton-9.0-arm64ec.tar.zst")
     File staleProtonARM64EC = new File(assetDir, "proton-10.0-5-arm64ec.tar.zst")
@@ -82,11 +82,11 @@ tasks.register("downloadProton") {
             }
         }
     }
-}
+}*/
 
 tasks.register("prepareKotlinBuildScriptModel"){}
 downloadProton.dependsOn(downloadImageFS)
-preBuild.dependsOn(downloadProton)
+// preBuild.dependsOn(downloadProton)
 
 android {
     namespace 'com.winlator.cmod'
