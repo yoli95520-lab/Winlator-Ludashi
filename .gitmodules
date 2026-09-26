@@ -7,3 +7,7 @@
 [submodule "app/src/main/cpp/adrenotools"]
 	path = app/src/main/cpp/adrenotools
 	url = https://github.com/Pipetto-crypto/libadrenotools.git
+[submodule "app/src/main/cpp/external/lsfg-vk-android"]
+	path = app/src/main/cpp/external/lsfg-vk-android
+	url = https://github.com/FrankBarretta/lsfg-vk-android.git
+	branch = release
